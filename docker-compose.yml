@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    image: golang:1.21-alpine
+    container_name: caps15-backend
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+    command: tail -f /dev/null
+    networks:
+        - gis_network
+
+  frontend:
+    image: node:20-alpine
+    container_name: caps15-frontend
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    command: tail -f /dev/null
+    networks:
+        - gis_network
+    ports:
+      - "3000:3000"
+
+networks:
+  gis_network:
+    driver: bridge

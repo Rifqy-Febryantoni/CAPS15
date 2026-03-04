@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+/vendor/
+*.exe
+
+# Environments
+.env
+
+# Build outputs
+/dist/
+/build/
+/out/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Docker
+.docker/
+docker-compose.override.yml
