@@ -25,7 +25,7 @@
 ## Workflow Git & Standar Operasional
 
 ### Secrets
-**DILARANG KERAS** memasukkan password database, API Key, atau token apapun ke dalam Git!
+Dilarang memasukkan password database, API Key, atau token apapun ke dalam Git!
 Semua *secret* murni hanya boleh disimpan di file `.env` di masing-masing laptop developer (file ini sudah di-ignore secara global melalui `.gitignore`).
 
 ### Branching Git
